@@ -24,13 +24,13 @@
 ---
 
 
+
 ## How to Use
 
 ### 1. Clone the Repository
 
-```bash
-git clone https://github.com/your-username/getJobs.git
-cd getJobs
+git clone https://github.com/Razana3008/getJobs.git
+cd getJobs 
 
 
 ### 2. Create .env File
