@@ -1,0 +1,5 @@
+selenium
+sqlalchemy
+schedule
+flask
+python-dotenv
