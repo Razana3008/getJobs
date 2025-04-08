@@ -12,7 +12,7 @@ init_db()
 # === Scraper Thread ===
 
 def run_scraper_schedule():
-    schedule.every(10).seconds.do(job_scraper)
+    schedule.every(50).seconds.do(job_scraper)
     while True:
         schedule.run_pending()
         time.sleep(1)

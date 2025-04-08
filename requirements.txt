@@ -3,3 +3,5 @@ sqlalchemy
 schedule
 flask
 python-dotenv
+undetected-chromedriver==3.5.4
+

@@ -31,7 +31,8 @@ RUN apt-get update && apt-get install -y \
 
 # Set environment variables (optional if passed via --env-file)
 ENV CHROME_BINARY=/usr/bin/chromium
-ENV CHROMEDRIVER_PATH=/usr/lib/chromium/chromedriver
+ENV CHROMEDRIVER_PATH=/bin/chromedriver
+
 
 
 WORKDIR /app
@@ -39,6 +40,11 @@ COPY . .
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir undetected-chromedriver==3.5.4
+
+
+
 
 EXPOSE 5000
 CMD ["python", "app/scraper_server.py"]
+
