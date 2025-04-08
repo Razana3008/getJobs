@@ -29,8 +29,8 @@
 
 ### 1. Clone the Repository
 
-git clone https://github.com/Razana3008/getJobs.git
-cd getJobs 
+<pre> ```bash git clone https://github.com/Razana3008/getJobs.git cd getJobs ``` </pre>
+
 
 
 ### 2. Create .env File
@@ -46,8 +46,7 @@ Gmail users: Use an App Password if 2FA is enabled.
 
 ### 3. Build and Run with Docker
 
-docker build -t getjobs .
-docker run --env-file .env -p 5000:5000 getjobs
+<pre> ```bash docker build -t getjobs . docker run --env-file .env -p 5000:5000 getjobs ``` </pre>
 
 
 
